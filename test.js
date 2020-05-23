@@ -53,6 +53,9 @@ const itterations = (size, matrix, width = 3, c = 1, stepCount = 8, itterationCo
         // console.log({ size, width, c, stepCount });
         // console.log('has not exstra');
         itterationSteps(0, matrix, stepCount, itterationCount)
+        if (size === width) {
+            return
+        }
     }
     c++
     itterationCount++
@@ -149,7 +152,7 @@ const makeMatrixRandom = (size, matrix = [], count = 0) => {
     return matrix
 }
 
-testFoo(4)
+testFoo(2)
 //============7 x 7========
 // [7, 2, 1, 6, 3, 5, 6]
 // [7, 2, 4, 3, 5, 3, 3]
